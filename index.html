@@ -6,8 +6,10 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <link href='style/index.css' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="images/james_icon.png" />
   <script src="javascript/index.js"></script>
 </head>
 <body>
@@ -18,203 +20,38 @@
         <h1>James Jalandoni</h1>
         <p>curious developer, ambitious maker</p>
         <ul>
-          <li><a href="#portfolio" class="portfolioLink">Portfolio</a></li>
+          <li><a href="#intro" class="portfolioLink">Portfolio</a></li>
           <li><a href="#experience" class="experienceLink">Experience</a></li>
           <li><a href="#contact" class="contactLink">Contact</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div id="aboutMe" class="tile">
-    <div class="tileHeader">
-      <h2>Greetings!</h2>
-    </div>
-    <div class="hiTextBox">
-      <img src="/assets/james_hi.png">
-      <article>
-        <p>Thanks for stopping by!</p>
-        <p>I'm James and I build unique solutions for untapped opportunities.</p>
-        <p>My core motivation is to create meaningful change. Beginning in politics and advocacy I was able to achieve some signiciant success, but I came to realize that I could have a bigger impact in the private sector - especially in tech.</p>
-        <p>I discovered my passion for programming in a sales role at an early stage start-up. Out of curiousity and the pain of manually recording data, I started to teach myself some javascript to help automate a few tasks. What began as the equvalent of simple VBA scripts grew into a full CRM tool that tracked thousands of calls, collected new valuble metrics, and assisted in hundreds of sales. </p>
-      </article>
-    </div>
-  </div>
-  <div id="portfolio" class="tile">
-    <div class="tileHeader">
-      <h2>Portfolio</h2>
-    </div>
-    <section id="portfolioPieces">
-      <div class="piece">
-        <h3 class="pieceTitle">jobr</h3>
-        <div class="close" hidden>X</div>
-        <div class="pieceImages" hidden>
-          <img src="assets/jobrCompany.png">
-          <img src="assets/jobrPortal.png">
-          <img src="assets/jobrSplash.png">
-        </div>
-        <h4 class="piecePitch">A CRM for the jobseeker</h4>
-        <ul class="pieceLinks" hidden>
-          <li><a href="">github</a> </li>
-          <li><a href="">heroku</a> </li>
-        </ul>
-        <div  class="pieceDescription">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ex vel libero lacinia egestas. Curabitur et justo sed mi vulputate rhoncus sed vitae massa.</p>
-          <div class="pieceLists" hidden>
-            <div class="pieceDetails">
-              <span>Features</span>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>Google Maps</li>
-                <li>Other Things</li>
-              </ul>
-            </div>
-            <div class="pieceDetails">
-              <span>Technologies</span>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>Google Maps</li>
-                <li>Other Things</li>
-                <li>Other Things</li>
-                <li>Other Things</li>
-              </ul>
-            </div>
-            <div class="pieceDetails">
-              <span>Room for Improvement</span>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>Google Maps</li>
-                <li>Other Things</li>
-                <li>Other Things</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <div id="intro">
+    <div class="introContent">
+      <div class="introPic">
+        <img id="jamesHi" src="images/james_hi.png">
       </div>
-      <div class="piece">
-        <h3 class="pieceTitle">LG-Flow</h3>
-        <div class="close" hidden>X</div>
-        <p class="piecePitch">A single page for Lead Generation</p>
-        <div class="pieceImages" hidden>
-          <img src="#">
-          <img src="#">
-          <img src="#">
-        </div>
-        
-        <ul class="pieceLinks" hidden>
-          <li><a href="">github</a> </li>
-          <li><a href="">heroku</a> </li>
-        </ul>
-        <div  class="pieceDescription">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ex vel libero lacinia egestas. Curabitur et justo sed mi vulputate rhoncus sed vitae massa.</p>
-          <div class="pieceLists" hidden>
-            <div class="pieceDetails">
-              <span>Features</span>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>Google Maps</li>
-                <li>Other Things</li>
-              </ul>
-            </div>
-            <div class="pieceDetails">
-              <span>Technologies</span>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>Google Maps</li>
-                <li>Other Things</li>
-                <li>Other Things</li>
-                <li>Other Things</li>
-              </ul>
-            </div>
-            <div class="pieceDetails">
-              <span>Room for Improvement</span>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>Google Maps</li>
-                <li>Other Things</li>
-                <li>Other Things</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="piece">
-        <div class="close" hidden>X</div>
-        <h3 class="pieceTitle">n-bigenate</h3>
-        <p class="piecePitch">A CRM for the jobseeker</p>
-        <p class="pieceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ex vel libero lacinia egestas. Curabitur et justo sed mi vulputate rhoncus sed vitae massa.</p>
-      </div>
-      <div class="piece">
-        <div class="close" hidden>X</div>
-        <h3 class="pieceTitle">Diamond Mind Schools Maps</h3>
-        <p class="piecePitch">Interactive tool to find relevant refernces.</p>
-        <p class="pieceDescription">Integrated with SugarCRM API and Google Maps API to geographically visualize and interact with clients, prospects and leads.</p>
-      </div>
-      <div class="piece">
-        <div class="close" hidden>X</div>
-        <h3 class="pieceTitle">B Side Shuffle</h3>
-        <p class="piecePitch">Stunning content delivery for an emerging band</p>
-        <p class="pieceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ex vel libero lacinia egestas. Curabitur et justo sed mi vulputate rhoncus sed vitae massa.</p>
-      </div>
-      <div class="piece">
-        <div class="close" hidden>X</div>
-        <h3 class="pieceTitle">16bit Adventure</h3>
-        <p class="piecePitch">Fun RGP from the past</p>
-        <p class="pieceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ex vel libero lacinia egestas. Curabitur et justo sed mi vulputate rhoncus sed vitae massa.</p>
-      </div>
-    </section>
-  </div>
-  <div id="experience" class="tile">
-    <div class="tileHeader">
-      <h2>Skills</h2>
-    </div>
-    <div class="skillsMainContainer">
-      <div class="skillsRow">
-        <div class="skillContainer">
-          <div class="skillName">Ruby</div>
-          <progress value="60" max="100">80 %</progress>
-        </div>
-        <div class="skillContainer">
-          <div class="skillName">Javascript</div>
-          <progress value="80" max="100">60 %</progress>
-        </div>
-        <div class="skillContainer">
-          <div class="skillName">CSS</div>
-          <progress value="80" max="100">80 %</progress>
-        </div>
-      </div>
-      <div class="skillsRow">
-        <div class="skillContainer">
-          <div class="skillName">Java</div>
-          <progress value="30" max="100">30 %</progress>
-        </div>
-        <div class="skillContainer">
-          <div class="skillName">Node.js</div>
-          <progress value="45" max="100">45 %</progress>
-        </div>
-        <div class="skillContainer">
-          <div class="skillName">MongoDB</div>
-          <progress value="20" max="100">20 %</progress>
-        </div>
-      </div>
-      <div class="skillsRow">
-        <div class="skillContainer">
-          <div class="skillName">Rails</div>
-          <progress value="70" max="100">70 %</progress>
-        </div>
-        <div class="skillContainer">
-          <div class="skillName">SQL</div>
-          <progress value="30" max="100">30 %</progress>
-        </div>
-        <div class="skillContainer">
-          <div class="skillName">postgresql</div>
-          <progress value="40" max="100">40 %</progress>
-        </div>
+      <div class='introText'>
+        <h2>Hello!</h2>
       </div>
     </div>
   </div>
-  <div id="contact" class="tile">
-    <div class="tileHeader">
+  <div id="shiftable" class="tile">
+    <div class="shiftExplainBox">
+      <div id="shiftExplainOne" class="circleExplanation">
+        This is an App that I made to scheme
+      </div>
     </div>
+  </div>
+  <div id="shiftable2" class="tile">
+    <div class="shiftExplainBox">
+      <div id="shiftExplainOne" class="circleExplanation">
+        Stillll schemin
+      </div>
+    </div>
+  </div>
+  <div id="intro">
   </div>
 </body>
 </html>

@@ -4,7 +4,7 @@ var ready = function () {
     e.preventDefault();
     switch($(this).attr("class")) {
       case 'portfolioLink':
-        target = $('#portfolio');
+        target = $('#intro');
         break;
       case 'experienceLink':
         target = $('#experience');
