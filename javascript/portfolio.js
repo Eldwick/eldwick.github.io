@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module("jamesj", ['ui.router', 'ngAnimate'])
+  var app = angular.module("jamesj", ['ui.router', 'ngAnimate','ui.bootstrap'])
 
   app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
     $urlRouterProvider.otherwise('/');
@@ -22,7 +22,7 @@
       })
   }]);
 
-  app.controller("PortfolioController", ["$http", "$scope", function($http, $scope) {
+  app.controller("PortfolioController", ["$http", "$scope", "$modal", function($http, $scope, $modal) {
     $scope.tab = 2;
     $scope.selectTab = function(tabNum) {
       $scope.tab = tabNum;
@@ -30,5 +30,10 @@
     $scope.isSelected = function(tabNum) {
       return $scope.tab === tabNum
     }
+
   }])
 })() 
+
+function openModal() {
+  $('#jobr').modal()
+}

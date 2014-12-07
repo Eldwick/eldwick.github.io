@@ -47,13 +47,16 @@ body {
 }
 .piece:hover {
   border: 7px solid #18bc9c;
+  cursor: pointer;
   }
 
 .piece {
+  font-family: 'Noto Sans', sans-serif;
   background-color: #c7c0de;
   border-radius: 40px;
   border: 7px solid #fff;
   overflow: hidden;
+  height: 400px;
   padding-bottom: 30px;
 }
 
@@ -67,9 +70,13 @@ body {
   text-align: center;
   margin-top: 80px;
 }
+.curious p, .ambitious p{
+  min-width: 300px;
+}
 
 .curious {
   text-align: right;
+
 }
 .ambitious {
   text-align: left;
@@ -113,15 +120,29 @@ body {
   min-width: 100%;
 }
 
+.modal-content {
+  padding: 10px;
+  background-color:  #c7c0de;
+
+}
+
+.shiftableModalContent {
+  width: 100%;
+}
+
+.modal-content img{
+  width: 100%;
+}
+
 html, body {
   min-height: 100%;
   min-width: 100%;
 }
 .nav {
   z-index: 100;
+  margin-bottom: 20px;
 }
 .fade {
-  margin-top: 20px;
     height: 100%;
     width: 100%;
     opacity: 1;
@@ -139,9 +160,7 @@ html, body {
     width: 300px;
 }
 
-.fade.ng-enter p {
-    opacity: 0;
-}
+
 .fade p {
     opacity: 1;
     -webkit-transition: all 1s ease;
@@ -149,10 +168,7 @@ html, body {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
-.fade.ng-enter-active p {
-  opacity: 0;
 
-}
 
 .fade.ng-enter-active {
   height: 100%;
