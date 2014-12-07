@@ -42,8 +42,8 @@ body {
   }
 .piece img {
   width: 100%;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .piece:hover {
   border: 7px solid #18bc9c;
@@ -53,7 +53,7 @@ body {
 .piece {
   font-family: 'Noto Sans', sans-serif;
   background-color: #c7c0de;
-  border-radius: 40px;
+  border-radius: 20px;
   border: 7px solid #fff;
   overflow: hidden;
   height: 400px;
